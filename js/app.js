@@ -44,14 +44,14 @@ function characterGo(e)
     //closer
     if (e.keyCode == '40')
     {
-        if (bigger >= 20)
+        if (bigger >= 15)
         {
-            bigger == 20
+            bigger == 15
         }
         else
         {
             bigger = bigger + 1;
-            jumpPosition = jumpPosition - 5;
+            jumpPosition = jumpPosition - 6;
             console.log(bigger);
             character.style.width = 'calc(70px + ' + bigger + 'px)';
             character.style.bottom = jumpPosition + 'px';
